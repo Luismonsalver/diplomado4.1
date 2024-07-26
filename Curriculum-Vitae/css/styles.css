@@ -155,3 +155,271 @@ a {
     background-color: #333;
     color: #fff;
   }
+
+/* Logos estilos */
+.logos {
+	background-color: #3498db;;
+	padding: 30px 0;
+}
+
+@media (max-width: 1440px) {
+	.logos {
+		border-radius: 0;
+	}
+}
+
+.marquee {
+	width: 100vw;
+	max-width: 100%;
+	height: 128px;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee .track {
+	position: absolute;
+	white-space: nowrap;
+	will-change: transform;
+	animation: marquee 40s linear infinite;
+	display: flex;
+	gap: 10px;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+/*Sobre nosotros*/
+
+h2 {
+	font-size: 64px;
+	line-height: 1;
+	margin-bottom: 10px;
+	text-align: center;
+	color: var(--base-800);
+	padding: 30px;
+}
+
+h2 small {
+	display: block;
+	font-weight: 100;
+	font-size: 0.5em;
+	color: black
+}
+
+@media (max-width: 1024px) {
+	h2 {
+		font-size: 48px;
+	}
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.skills .holder-blue {
+	background-color: #3498db; /* Azul */
+	border-radius: 30px;
+	padding: 30px;
+	display: flex;
+	margin: 0 20px; /* Márgenes a los lados */
+
+	@media (max-width: 1024px) {
+		.skills .holder-blue {
+			flex-direction: column;
+		}
+	}
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+
+}
+
+.skills .holder-blue .left-column {
+	flex: 1;
+}
+
+.skills .holder-blue .left-column ul {
+	list-style-type: none;
+	gap: 10px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+
+}
+
+.skills .holder-blue .left-column ul li {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+	display: inline-block;
+	background-color: #2980b9; /* Azul más oscuro */
+	padding: 10px 20px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+    color: white;
+}
+
+.skills .holder-blue .right-column {
+	flex: 1;
+}
+
+.skills .holder-blue .right-column p {
+	margin-bottom: 20px;
+    color:white
+}    
+
+/*FOOTER*/
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  
+  .pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;}
+  
+  
+  
+  /*Responsive*/
+  @media (min-width: 600px) {
+    
+    .pie-pagina .grupo-1{
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap:30px;
+          padding: 35px 0px;
+      }
+  }
+  
+  /* Estilo base para el pie de página */
+  .pie-pagina{
+    width: 100%;
+    margin-top: 2%;
+    background-color: #0a141d;
+  }
+  
+  /* Estilo para el contenedor principal del pie de página */
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+  }
+  
+  /* Estilo para la figura de la caja del pie de página */
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para la imagen de la figura de la caja del pie de página */
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  
+  /* Estilo para el título de la caja del pie de página */
+  .pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  /* Estilo para el texto de la caja del pie de página */
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el segundo grupo del pie de página */
+  .pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Estilo para el texto pequeño del segundo grupo del pie de página */
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  }
+  
+  /*RESPONSIVE DEL OVERLAY EN MOVILES*/
+  @media screen and (max-width: 480px) {
+    .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+    }
+  
+    .pie-pagina .grupo-1 .box {
+      text-align: center;
+    }
+  
+    .pie-pagina .grupo-1 .box figure img{
+      width: 200px;
+    }
+  
+    .pie-pagina .grupo-1 .box h2 {
+      font-size: 18px;
+    }
+  
+    .pie-pagina .grupo-1 .box p {
+      font-size: 14px;
+    }
+  
+    .pie-pagina .grupo-2 small{
+      font-size: 14px;
+    }
+  }
+  
